@@ -3,7 +3,9 @@
 #include "QString"
 #include "QMessageBox"
 #include "fstream"
+#include "iostream"
 #include "QRadioButton"
+using namespace std;
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -65,9 +67,13 @@ void MainWindow::on_SPRAWDZ_clicked()
      else
     {
         QMessageBox::information(this, tr("WYNIK"),tr("Masz: %1 promila we krwi").arg(P));
-        std::ofstream file("wynik.txt");
-        file << "Wynik wynosi:" << P <<" promila we krwi";
-        file.close();}
+
+        std::fstream file("wynik.txt", ios_base::app);
+        file <<"\n|Wynik wynosi: " << P <<" promila we krwi|";
+        file.close();
+
+        }
+
 
 
 
