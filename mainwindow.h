@@ -14,10 +14,12 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-
-private:
     Ui::MainWindow *ui;
+
 private slots:
     void on_SPRAWDZ_clicked();
+
+private:
+
 };
 #endif // MAINWINDOW_H

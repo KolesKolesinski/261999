@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>395</width>
-    <height>494</height>
+    <width>418</width>
+    <height>381</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -95,8 +95,8 @@
    <widget class="QPushButton" name="SPRAWDZ">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>390</y>
+      <x>30</x>
+      <y>270</y>
       <width>361</width>
       <height>41</height>
      </rect>
@@ -228,7 +228,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>395</width>
+     <width>418</width>
      <height>20</height>
     </rect>
    </property>
